@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #efbebe;
+    margin: 0;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.planner {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(241, 193, 228, 0.1); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.9);
+}
+
+
+.time-slot {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.time-label {
+    width: 80px;
+    padding: 10px;
+    background: #ddd;
+    text-align: center;
+}
+
+.task-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.save-btn {
+    padding: 10px 20px;
+    background: #c909b9;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.save-btn:hover {
+    background: #20de4a;
+}
+
+.delete-btn {
+    padding: 10px 20px;
+    background: #6c6ec3;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+.past {
+    background-color: #e0e0e0;
+}
+.present {
+    background-color: #ffe599;
+}
+.future {
+    background-color: #c6efce;
+}
+
+
+@media (max-width: 600px) {
+    .time-label {
+        width: 60px;
+        font-size: 14px;
+    }
+    .task-input {
+        font-size: 14px;
+    }
+    .save-btn, .delete-btn {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+body.dark {
+    background: #222;
+    color: #fff;
+}
+
+body.dark .time-label {
+    background: #444;
+}
+
+body.dark .task-input {
+    background: #333;
+    color: #fff;
+}
