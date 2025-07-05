@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <div id="cartCount" onclick="showCart()">🛒 Cart (1)</div>
+
+  <meta charset="UTF-8">
+  <title>My E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>FlipMart</h1>
+    <input type="text" id="searchBar" placeholder="Search products...">
+  </header>
+
+  <div id="filters">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('electronics')">Electronics</button>
+    <button onclick="filterProducts('clothing')">Clothing</button>
+    <button onclick="filterProducts('books')">Books</button>
+  </div>
+
+  <main id="product-list"></main>
+
+  <div id="product-modal" class="hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<section id="cartPage" style="display: table-header-group;""" none;">
+  <h2>Your Cart</h2>
+  <div id="cartItems"></div>
+  <p id="grandTotal"></p>
+  <button onclick="checkout()">Proceed to Checkout</button>
+</section>
+<section id="authForm">
+  <h2>Login / Register</h2>
+  <input type="text" id="username" placeholder="Enter username" />
+  <input type="password" id="password" placeholder="Enter password" />
+  <button onclick="login()">Login</button>
+  <button onclick="register()">Register</button>
+  <p id="authStatus"></p>
+</section>

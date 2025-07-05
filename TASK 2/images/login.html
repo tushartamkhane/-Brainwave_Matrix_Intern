@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - ShopEase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-container">
+    <h2>Login / Register</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <div>
+      <button onclick="login()">Login</button>
+      <button onclick="register()">Register</button>
+    </div>
+    <p id="authStatus"></p>
+    <a href="index.html">← Back to Shop</a>
+  </div>
+
+  <script src="auth.js"></script>
+  
+  <script>
+  const loggedUser = localStorage.getItem("loggedInUser");
+  if (!loggedUser) {
+    window.location.href = "login.html";
+  }
+</script>
+
+</body>
+</html>
